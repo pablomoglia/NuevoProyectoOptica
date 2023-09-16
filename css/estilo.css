@@ -27,8 +27,12 @@ body{
     color: rgb(226, 226, 236);
     font-size: 1.3rem;
     font-family: 'Figtree', sans-serif;
-
+    text-decoration: none;
 }
+.linkMenu{
+    text-decoration: none;
+}
+
 ul.menuHeader{
     margin: 0 ;
     padding: 0;
