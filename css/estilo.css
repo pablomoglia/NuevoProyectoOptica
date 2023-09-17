@@ -59,6 +59,9 @@ body{
     font-family: 'Figtree', sans-serif;
     text-decoration: none;
 }
+.btnHeader:hover{
+    transform: scale(1.1);
+}
 .linkMenu{
     text-decoration: none;
 }
@@ -174,6 +177,7 @@ img.imgDestacados{
 
 .imgInsta:hover {
     opacity: 50%;
+    transform: scale(1.1);
 }
 
 .imgFacebook {
@@ -185,6 +189,7 @@ img.imgDestacados{
 
 .imgFacebook:hover {
     opacity: 50%;
+    transform: scale(1.1);
 }
 
 ul.ulFooter {
@@ -341,6 +346,19 @@ ul.ulFooter {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:768px){
     .contenedorNosotros {
         display: grid;
