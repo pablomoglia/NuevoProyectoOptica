@@ -16,29 +16,74 @@
 </head>
 
 <body>
-    <div class="contenedor">
+    <div class="contenedorContacto">
         <header class="header">
             <img src="../multim/logo.jpg" class="imgLogoHeader" alt="logo empresa">
             <ul class="menuHeader">
                 <li>
-                    <button class="btn btn-outline-light btnHeader"><a class="linkMenu" href="../pages/nosotros.html">Nosotros</a></button>
+                    <button class="btn btn-outline-light btnHeader"><a class="linkMenu"
+                            href="../pages/nosotros.html">Nosotros</a></button>
                 </li>
                 <li>
-                    <button class="btn btn-outline-light btnHeader"><a class="linkMenu" href="../pages/lentes.html">Lentes</a></button>
+                    <button class="btn btn-outline-light btnHeader"><a class="linkMenu"
+                            href="../pages/lentes.html">Lentes</a></button>
                 </li>
                 <li>
-                    <button class="btn btn-outline-light btnHeader"><a class="linkMenu" href="../pages/prodyacc.html">Productos y Accesorios</a></button>
+                    <button class="btn btn-outline-light btnHeader"><a class="linkMenu"
+                            href="../pages/prodyacc.html">Productos y Accesorios</a></button>
                 </li>
                 <li>
-                    <button class="btn btn-outline-light btnHeader"><a class="linkMenu" href="../pages/solicitarturno.html">Solicitar Turno</a></button>
+                    <button class="btn btn-outline-light btnHeader"><a class="linkMenu"
+                            href="../pages/solicitarturno.html">Solicitar Turno</a></button>
                 </li>
                 <li>
-                    <button class="btn btn-outline-light btnHeader"><a class="linkMenu" href="../pages/contacto.html">Contacto</a></button>
+                    <button class="btn btn-outline-light btnHeader"><a class="linkMenu"
+                            href="../pages/contacto.html">Contacto</a></button>
                 </li>
             </ul>
         </header>
         <div class="home">
             <a href="../index.html"><img src="../multim/home.png" alt="ir al home"></a></a>
+        </div>
+        <form class="text-light text-center formContacto">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" placeholder="Pablo">
+            </div>
+            <div class="mb-3">
+                <label for="surname" class="form-label">Apellido</label>
+                <input type="text" class="form-control" placeholder="Moglia">
+            </div>
+            <div class="mb-3">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text text-warning">Nunca compartiremos tu correo electrónico con
+                    nadie .</div>
+            </div>
+            <div class="mb-3">
+                <label for="coment" class="form-label">Comentarios</label>
+                <textarea class="form-control" id="coment" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-secondary btnLoc">Enviar mensaje</button>
+        </form>
+        <div class="ubiMapa">
+            <img class="imgUbi" src="../multim/ubicacion.png" alt="ubicacion en mapa">
+        </div>
+        <div class="ulContacto">
+            <ul class="ulCont text-light">
+                <li>
+                    Direccion
+                </li>
+                <li>
+                    Email
+                </li>
+                <li>
+                    Tel
+                </li>
+                <li>
+                    Whatsapp
+                </li>
+            </ul>
         </div>
         <footer class="footer">
             <img src="../multim/logo.jpg" class="imgLogoFooter" alt="logo empresa">
