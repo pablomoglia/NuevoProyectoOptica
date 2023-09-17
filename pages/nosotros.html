@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="../multim/favicon-32x32.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Óptica Muntane</title>
 </head>
@@ -48,7 +49,7 @@
         <div class="fotoLocal">
             <img src="../multim/fotolocal.jpg" class="imgLocal" alt="Foto local">
         </div>
-        <div class="textoNosotros">
+        <div class="textoNosotros" data-aos="flip-left">
             <div class="parrafoNosotros">
                 <p class="text-light text-center">
                 La óptica ubicada en calle Mendoza 7048 en Rosario, Santa Fe, es un lugar
@@ -105,6 +106,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>
