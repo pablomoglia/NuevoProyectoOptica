@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 text {
@@ -71,11 +72,17 @@ body {
 }
 
 ul.menuHeader {
+    width: 100% auto;
     margin: 0;
     padding: 0;
-    display: flex;
     list-style: none;
+    display: flex;
     justify-content: center;
+}
+.menuHeader{
+    width: 100% auto;
+    display: flex;
+    justify-content: end;
 }
 
 .imgLogoHeader {
@@ -413,6 +420,18 @@ ul.ulFooter {
 
 
 
+.formSoltur {
+    margin: 30px;
+    grid-area: formSoltur;
+    width: 80% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
 
 
 
@@ -431,94 +450,106 @@ ul.ulFooter {
 .contenedorIndex {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 2.2fr 1fr 0.4fr;
+    grid-template-rows: 0.1fr 2.2fr 1fr 0.1fr;
     grid-auto-columns: 1fr;
     gap: 5px 5px;
     grid-auto-flow: row;
     grid-template-areas:
     "header header"
     "sectionMarcas sectionDestacados"
-        "sectionMarcasTex sectionDestacadosTex"
+    "sectionMarcasTex sectionDestacadosTex"
         "footer footer";
-}
-
-.contenedorNosotros {
-    display: grid;
+    }
+    
+    .contenedorNosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 2fr 0.1fr;
+        grid-auto-columns: 1fr;
+        gap: 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "header header"
+        "fotoLocal textoNosotros"
+        "footer footer";
+    }
+    
+    .contenedorLentes {
+        display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 2fr 0.4fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 0.1fr;
     grid-auto-columns: 1fr;
     gap: 5px;
     grid-auto-flow: row;
     grid-template-areas:
     "header header"
-        "fotoLocal textoNosotros"
-        "footer footer";
-    }
-
-    .contenedorLentes {
-        display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr 1fr 0.4fr;
-    grid-auto-columns: 1fr;
-    gap: 5px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "header header"
-        "img1 img2"
-        "img3 img4"
-        "img5 img6"
-        "footer footer";
+    "img1 img2"
+    "img3 img4"
+    "img5 img6"
+    "footer footer";
 }
 
 .contenedorProdyacc {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.2fr 1fr 0.2fr 1fr 0.4fr;
+    grid-template-rows: 0.1fr 0.2fr 1fr 0.2fr 1fr 0.1fr;
     grid-auto-columns: 1fr;
     gap: 5px;
     grid-auto-flow: row;
     grid-template-areas:
-        "header header header"
-        "gotas gotas gotas"
-        "itemsProdyacc1 itemsProdyacc2 itemsProdyacc3"
+    "header header header"
+    "gotas gotas gotas"
+    "itemsProdyacc1 itemsProdyacc2 itemsProdyacc3"
         "acc acc acc"
         "itemsProdyacc4 itemsProdyacc5 itemsProdyacc6"
         "footer footer footer";
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:768px) {
-    .contenedorIndex {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 2.2fr 1fr 2.2fr 1fr 0.4fr;
+    }
+    
+    .contenedorSolicitarTurno {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr 0.1fr;
         grid-auto-columns: 1fr;
         gap: 5px 5px;
         grid-auto-flow: row;
         grid-template-areas:
-            "header"
+            "header header"
+            "formSoltur formSoltur"
+            "footer footer";
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (max-width:768px) {
+        .contenedorIndex {
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.4fr 2.2fr 1fr 2.2fr 1fr 0.4fr;
+        grid-auto-columns: 1fr 1fr;
+        gap: 5px 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "header"
             "sectionMarcas"
             "sectionMarcasTex"
             "sectionDestacados"
             "sectionDestacadosTex"
             "footer";
 
-        .header {
-            flex-direction: column;
+            .header {
+                flex-direction: column;
         }
     }
 }
@@ -531,23 +562,16 @@ ul.ulFooter {
         gap: 5px 5px;
         grid-auto-flow: row;
         grid-template-areas:
-            "header"
-            "home"
+        "header"
             "sectionMarcas"
             "sectionMarcasTex"
             "sectionDestacados"
             "sectionDestacadosTex"
             "footer";
 
-        .home {
-            position: relative;
-            display: flex;
-            justify-content: center;
-        }
-
-        .header {
-            flex-direction: column;
-        }
+            .header {
+                flex-direction: column;
+            }
 
         .footer {
             flex-direction: column;
@@ -604,16 +628,23 @@ ul.ulFooter {
         gap: 5px 5px;
         grid-auto-flow: row;
         grid-template-areas:
-            "header"
-            "home"
+        "header"
+        "home"
             "fotoLocal"
             "textoNosotros"
             "footer";
 
         .home {
+            width: 50px;
             position: relative;
             display: flex;
             justify-content: center;
+        }
+
+        .home img {
+            margin: 0;
+            padding: 0;
+            display: flex;
         }
 
         .header {
@@ -692,9 +723,16 @@ ul.ulFooter {
             "footer";
 
         .home {
+            width: 50px;
             position: relative;
             display: flex;
             justify-content: center;
+        }
+        
+        .home img {
+            margin: 0;
+            padding: 0;
+            display: flex;
         }
 
         .header {
@@ -730,7 +768,7 @@ ul.ulFooter {
 
 @media screen and (max-width:768px) {
     .contenedorProdyacc {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.4fr 0.1fr 1fr 1fr 0.1fr 1fr 1fr 0.4fr;
         grid-auto-columns: 1fr;
         gap: 5px 5px;
@@ -771,11 +809,84 @@ ul.ulFooter {
             "itemsProdyacc5"
             "itemsProdyacc6"
             "footer";
-
-        .home {
+            
+            .home {
+                width: 50px;
             position: relative;
             display: flex;
             justify-content: center;
+        }
+
+        .home img {
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .header {
+            flex-direction: column;
+        }
+
+        .footer {
+            flex-direction: column;
+        }
+
+        .menuHeader {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    .contenedorSolicitarTurno {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        gap: 5px 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header"
+            "formSoltur"
+            "footer";
+
+        .header {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .contenedorSolicitarTurno {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        gap: 5px 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header"
+            "home"
+            "formSoltur"
+            "footer";
+
+        .home {
+            width: 50px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .home img {
+            margin: 0;
+            padding: 0;
+            display: flex;
         }
 
         .header {
