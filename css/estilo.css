@@ -121,11 +121,6 @@ ul.menuHeader {
     justify-content: space-around;
 }
 
-img.imgMarcas {
-    border-radius: 5%;
-    width: 100%;
-    height: 80%;
-}
 
 .sectionDestacados {
     grid-area: sectionDestacados;
@@ -135,11 +130,6 @@ img.imgMarcas {
     justify-content: space-around;
 }
 
-img.imgDestacados {
-    border-radius: 5%;
-    width: 100%;
-    height: 80%;
-}
 
 .sectionMarcasTex {
     grid-area: sectionMarcasTex;
