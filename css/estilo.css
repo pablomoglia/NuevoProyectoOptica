@@ -104,7 +104,7 @@ ul.menuHeader {
 }
 
 .fontTexto {
-    font-family: 'Zilla Slab', serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -118,7 +118,7 @@ ul.menuHeader {
     margin: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 img.imgMarcas {
@@ -132,7 +132,7 @@ img.imgMarcas {
     margin: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 img.imgDestacados {
