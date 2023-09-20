@@ -140,7 +140,8 @@ ul.menuHeader {
     align-items: center;
     justify-content: center;
 }
-.sectionMarcasTex:hover{
+
+.sectionMarcasTex:hover {
     color: rgb(255, 255, 255);
 }
 
@@ -153,16 +154,19 @@ ul.menuHeader {
     align-items: center;
     justify-content: center;
 }
-.sectionDestacadosTex:hover{
+
+.sectionDestacadosTex:hover {
     color: rgb(255, 255, 255);
 }
-.titMarcas{
+
+.titMarcas {
     grid-area: titMarcas;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.titDestacados{
+
+.titDestacados {
     grid-area: titDestacados;
     display: flex;
     align-items: center;
@@ -281,7 +285,8 @@ ul.ulFooter {
     border: solid 1px whitesmoke;
     border-radius: 4%;
 }
-.titNosotros{
+
+.titNosotros {
     grid-area: titNosotros;
     display: flex;
     align-items: center;
@@ -314,7 +319,7 @@ ul.ulFooter {
 }
 
 .imgLentes:hover {
-    transform: scale(1.1,1.1);
+    transform: scale(1.1, 1.1);
     z-index: 1;
 }
 
@@ -503,13 +508,16 @@ ul.ulFooter {
 
 .ulContacto {
     grid-area: ulContacto;
-    margin: 20px;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 40vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.ulContacto:hover{
-    transform: scale(1.3);    
+
+.ulContacto:hover {
+    transform: scale(1.1);
 }
 
 .ulCont {
@@ -538,20 +546,20 @@ ul.ulFooter {
         "sectionMarcas sectionDestacados"
         "sectionMarcasTex sectionDestacadosTex"
         "footer footer";
-    }
+}
 
-    .contenedorNosotros {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 1fr 4fr 0.1fr;
-        grid-auto-columns: 1fr;
-        gap: 5px;
-        grid-auto-flow: row;
-        grid-template-areas:
-    "header header"
-    "titNosotros titNosotros"
-    "fotoLocal textoNosotros"
-    "footer footer";
+.contenedorNosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 4fr 0.1fr;
+    grid-auto-columns: 1fr;
+    gap: 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header"
+        "titNosotros titNosotros"
+        "fotoLocal textoNosotros"
+        "footer footer";
 }
 
 .contenedorLentes {
@@ -562,11 +570,11 @@ ul.ulFooter {
     gap: 5px;
     grid-auto-flow: row;
     grid-template-areas:
-    "header header"
-    "img1 img2"
-    "img3 img4"
-    "img5 img6"
-    "footer footer";
+        "header header"
+        "img1 img2"
+        "img3 img4"
+        "img5 img6"
+        "footer footer";
 }
 
 
@@ -584,19 +592,19 @@ ul.ulFooter {
         "acc acc acc"
         "itemsProdyacc4 itemsProdyacc5 itemsProdyacc6"
         "footer footer footer";
-    }
+}
 
-    .contenedorSolicitarTurno {
-        display: grid;
+.contenedorSolicitarTurno {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr 1fr 0.1fr;
     grid-auto-columns: 1fr;
-    gap: 5px 5px;
+    gap: 5px;
     grid-auto-flow: row;
     grid-template-areas:
-    "header header"
-    "formSoltur formSoltur"
-    "footer footer";
+        "header header"
+        "formSoltur formSoltur"
+        "footer footer";
 }
 
 .contenedorContacto {
@@ -643,7 +651,8 @@ ul.ulFooter {
             "sectionDestacados"
             "sectionDestacadosTex"
             "footer";
-            .header {
+
+        .header {
             flex-direction: column;
         }
     }
@@ -784,19 +793,24 @@ ul.ulFooter {
         .header {
             flex-direction: column;
         }
-        .img1{
+
+        .img1 {
             width: 80vw;
         }
-        .img2{
+
+        .img2 {
             width: 80vw;
         }
-        .img3{
+
+        .img3 {
             width: 80vw;
         }
-        .img4{
+
+        .img4 {
             width: 80vw;
         }
-        .img5{
+
+        .img5 {
             width: 80vw;
         }
     }
@@ -818,7 +832,7 @@ ul.ulFooter {
             "img5"
             "img6"
             "footer";
-        
+
         .header {
             flex-direction: column;
         }
@@ -867,7 +881,7 @@ ul.ulFooter {
             "itemsProdyacc4 itemsProdyacc5"
             "itemsProdyacc6 itemsProdyacc6"
             "footer footer";
-            
+
         .header {
             flex-direction: column;
         }
@@ -891,7 +905,7 @@ ul.ulFooter {
             "itemsProdyacc4"
             "itemsProdyacc5"
             "itemsProdyacc6"
-            "footer";           
+            "footer";
 
         .header {
             flex-direction: column;
@@ -900,7 +914,7 @@ ul.ulFooter {
         .footer {
             flex-direction: column;
         }
-        
+
         .menuHeader {
             flex-direction: column;
             align-items: center;
@@ -926,7 +940,7 @@ ul.ulFooter {
             "header"
             "formSoltur"
             "footer";
-            
+
         .header {
             flex-direction: column;
         }
@@ -944,6 +958,7 @@ ul.ulFooter {
             "header"
             "formSoltur"
             "footer";
+
         .header {
             flex-direction: column;
         }
@@ -967,64 +982,64 @@ ul.ulFooter {
 
 
 @media screen and (max-width:768px) {
-            .contenedorContacto {
-                grid-template-columns: 1fr;
-                grid-template-rows: 0.1fr 2.2fr 1fr 1fr 0.1fr;
-                grid-auto-columns: 1fr 1fr;
-                gap: 5px 5px;
-                grid-auto-flow: row;
-                grid-template-areas:
-                    "header"
-                    "formContacto"
-                    "ubiMapa"
-                    "ulContacto"
-                    "footer";
-        
-                .header {
-                    flex-direction: column;
-                }
-            }
+    .contenedorContacto {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 2.2fr 1fr 1fr 0.1fr;
+        grid-auto-columns: 1fr 1fr;
+        gap: 5px 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header"
+            "formContacto"
+            "ubiMapa"
+            "ulContacto"
+            "footer";
+
+        .header {
+            flex-direction: column;
         }
-        
-        @media screen and (max-width:480px) {
-            .contenedorContacto {
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr;
-                grid-auto-columns: 1fr;
-                gap: 5px 5px;
-                grid-auto-flow: row;
-                grid-template-areas:
-                    "header"
-                    "home"
-                    "formContacto"
-                    "ubiMapa"
-                    "ulContacto"
-                    "footer";
-        
-                .header {
-                    flex-direction: column;
-                }
-        
-                .home {
-                    width: 50px;
-                    position: relative;
-                    display: flex;
-                    justify-content: center;
-                }
-        
-                .home img {
-                    margin: 0;
-                    padding: 0;
-                    display: flex;
-                }
-        
-                .footer {
-                    flex-direction: column;
-                }
-        
-                .menuHeader {
-                    flex-direction: column;
-                    align-items: center;
-                }
-            }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .contenedorContacto {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        gap: 5px 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header"
+            "home"
+            "formContacto"
+            "ubiMapa"
+            "ulContacto"
+            "footer";
+
+        .header {
+            flex-direction: column;
         }
+
+        .home {
+            width: 50px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .home img {
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .footer {
+            flex-direction: column;
+        }
+
+        .menuHeader {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
