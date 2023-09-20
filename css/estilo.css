@@ -818,19 +818,6 @@ ul.ulFooter {
             "img5"
             "img6"
             "footer";
-
-        .home {
-            width: 50px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-        }
-
-        .home img {
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
         
         .header {
             flex-direction: column;
@@ -896,7 +883,6 @@ ul.ulFooter {
         grid-auto-flow: row;
         grid-template-areas:
             "header"
-            "home"
             "gotas"
             "itemsProdyacc1"
             "itemsProdyacc2"
@@ -905,20 +891,7 @@ ul.ulFooter {
             "itemsProdyacc4"
             "itemsProdyacc5"
             "itemsProdyacc6"
-            "footer";
-            
-            .home {
-                width: 50px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-        }
-
-        .home img {
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
+            "footer";           
 
         .header {
             flex-direction: column;
@@ -969,23 +942,8 @@ ul.ulFooter {
         grid-auto-flow: row;
         grid-template-areas:
             "header"
-            "home"
             "formSoltur"
             "footer";
-
-        .home {
-            width: 50px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-        }
-
-        .home img {
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
         .header {
             flex-direction: column;
         }
