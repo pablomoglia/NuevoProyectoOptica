@@ -242,7 +242,7 @@ ul.ulFooter {
 }
 
 .imgLocal {
-    width: 100%;
+    width: 50vw;
     height: 100%;
     border-radius: 15%;
     padding: 45px;
@@ -274,11 +274,7 @@ ul.ulFooter {
 
 
 
-.galeriaLentes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 
 .imgLentes {
     display: flex;
@@ -290,56 +286,76 @@ ul.ulFooter {
 }
 
 .imgLentes img {
-    width: 80%;
-    height: 100%;
+    width: 70%;
+    height: 50;
     border-radius: 15%;
-    padding: 20px;
-}
-
-.efectoLentes {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    transition: opacity 0.3s;
 }
 
 .imgLentes:hover {
-    transform: scale(1.2);
+    transform: scale(1.1,1.1);
     z-index: 1;
 }
 
 .img1 {
     grid-area: img1;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .img2 {
     grid-area: img2;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .img3 {
     grid-area: img3;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .img4 {
     grid-area: img4;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .img5 {
     grid-area: img5;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .img6 {
     grid-area: img6;
     display: flex;
     align-items: center;
-    margin: 25px;
+    margin: 0 auto;
+    padding: 1rem;
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 
 
 
@@ -529,6 +545,7 @@ ul.ulFooter {
     "footer footer";
 }
 
+
 .contenedorProdyacc {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -668,7 +685,9 @@ ul.ulFooter {
         }
 
         .imgLocal {
-            max-height: 50%;
+            width: 80%;
+            height: 50%;
+            border-radius: 20%;
         }
     }
 }
@@ -714,7 +733,8 @@ ul.ulFooter {
         }
 
         .imgLocal {
-            max-height: 100%;
+            width:  100%;
+            height: 100%;
             border-radius: 20%;
         }
     }
@@ -753,6 +773,21 @@ ul.ulFooter {
 
         .header {
             flex-direction: column;
+        }
+        .img1{
+            width: 80vw;
+        }
+        .img2{
+            width: 80vw;
+        }
+        .img3{
+            width: 80vw;
+        }
+        .img4{
+            width: 80vw;
+        }
+        .img5{
+            width: 80vw;
         }
     }
 }
