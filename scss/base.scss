@@ -1,11 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    body {
-        background-image: url(../multim/texturafondo.png);
-    }
-}
+@import "_all";
+@import "_header";
+@import "_footer";
+@import "_index";
+@import "_nosotros";
+@import "_lentes";
+@import "_prodyacc";
+@import "_solicitartur";
+@import "_contacto";
+@import "_mediaqueries";
 
 
 
@@ -46,10 +48,10 @@
                     font-family: 'Figtree', sans-serif;
                     text-decoration: none;
                     justify-content: center;
-                }
-                .btnHeader:hover {
-                    transform: scale(1.1);
+                    &:hover {
+                        transform: scale(1.1);
                     border-radius: 10%;
+                    }
                 }
             }
         }
@@ -60,7 +62,7 @@
         align-items: center;
         justify-content: center;
         .fontTitulo {
-            font-family: 'Zilla Slab', serif;
+            font-family: 'Figtree', sans-serif;
         }
     }
     .sectionMarcas {
@@ -78,12 +80,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        &:hover{
+            color: rgb(255, 255, 255);
+        }
         .fontTexto {
             font-family: 'Quicksand', sans-serif;
         }
-    }
-    .sectionMarcasTex:hover {
-        color: rgb(255, 255, 255);
     }
     .titDestacados {
         grid-area: titDestacados;
@@ -91,7 +93,7 @@
         align-items: center;
         justify-content: center;
         .fontTitulo {
-            font-family: 'Zilla Slab', serif;
+            font-family: 'Figtree', sans-serif;
         }
     }
     .sectionDestacados {
@@ -109,12 +111,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        &:hover{
+            color: rgb(255, 255, 255);
+        }
         .fontTexto {
             font-family: 'Quicksand', sans-serif;
         }
-    }
-    .sectionDestacadosTex:hover {
-        color: rgb(255, 255, 255);
     }
     .footer {
         grid-area: footer;
@@ -137,21 +139,20 @@
                 width: 40px;
                 border-radius: 50%;
                 border: solid rgb(255, 255, 255);
-                
-            }
-            .imgInsta:hover {
-                opacity: 50%;
-                transform: scale(1.1);
+                &:hover {
+                    opacity: 50%;
+                    transform: scale(1.1);
+                }
             }
             .imgFacebook {
                 margin: 5px;
                 width: 40px;
                 border-radius: 50%;
                 border: solid rgb(255, 255, 255);
-            }
-            .imgFacebook:hover {
-                opacity: 50%;
-                transform: scale(1.1);
+                &:hover {
+                    opacity: 50%;
+                    transform: scale(1.1);
+                }
             }
         }
         .ulFooter {
