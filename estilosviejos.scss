@@ -19,8 +19,20 @@ body {
 
 
 
-
-
+.contenedorIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.3fr 1fr 1fr 0.1fr;
+    grid-auto-columns: 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header"
+        "titMarcas titDestacados"
+        "sectionMarcas sectionDestacados"
+        "sectionMarcasTex sectionDestacadosTex"
+        "footer footer";
+    }
 
 
 
@@ -57,20 +69,6 @@ body {
     text-decoration: none;
 }
 
-ul.menuHeader {
-    width: 100% auto;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.menuHeader {
-    width: 100% auto;
-    display: flex;
-    justify-content: end;
-}
 
 .imgLogoHeader {
     margin: 5px;
@@ -139,7 +137,6 @@ ul.menuHeader {
     align-items: center;
     justify-content: center;
 }
-
 .sectionDestacadosTex:hover {
     color: rgb(255, 255, 255);
 }
@@ -208,7 +205,6 @@ ul.menuHeader {
     border-radius: 50%;
     border: solid rgb(255, 255, 255);
 }
-
 .imgFacebook:hover {
     opacity: 50%;
     transform: scale(1.1);
@@ -668,10 +664,6 @@ ul.ulFooter {
             flex-direction: column;
         }
 
-        .menuHeader {
-            flex-direction: column;
-            align-items: center;
-        }
     }
 }
 
@@ -736,10 +728,7 @@ ul.ulFooter {
             flex-direction: column;
         }
 
-        .menuHeader {
-            flex-direction: column;
-            align-items: center;
-        }
+
 
     }
 }
@@ -826,10 +815,6 @@ ul.ulFooter {
             flex-direction: column;
         }
 
-        .menuHeader {
-            flex-direction: column;
-            align-items: center;
-        }
     }
 }
 
@@ -899,11 +884,6 @@ ul.ulFooter {
         .footer {
             flex-direction: column;
         }
-
-        .menuHeader {
-            flex-direction: column;
-            align-items: center;
-        }
     }
 }
 
@@ -952,10 +932,6 @@ ul.ulFooter {
             flex-direction: column;
         }
 
-        .menuHeader {
-            flex-direction: column;
-            align-items: center;
-        }
     }
 }
 
@@ -1013,10 +989,6 @@ ul.ulFooter {
             flex-direction: column;
         }
 
-        .menuHeader {
-            flex-direction: column;
-            align-items: center;
-        }
         .ulContacto{
             width: 0 auto;
             align-content: center;
