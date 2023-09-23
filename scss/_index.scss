@@ -17,7 +17,7 @@
         align-items: center;
         justify-content: center;
         .fontTitulo {
-            font-family: 'Figtree', sans-serif;
+            font-family: $fontTitulo
         }
     }
     .sectionMarcas {
@@ -39,7 +39,7 @@
             color: rgb(255, 255, 255);
         }
         .fontTexto {
-            font-family: 'Quicksand', sans-serif;
+            font-family: $fontTexto
         }
     }
     .titDestacados {
@@ -48,7 +48,7 @@
         align-items: center;
         justify-content: center;
         .fontTitulo {
-            font-family: 'Figtree', sans-serif;
+            font-family: $fontTitulo
         }
     }
     .sectionDestacados {
@@ -70,7 +70,7 @@
             color: rgb(255, 255, 255);
         }
         .fontTexto {
-            font-family: 'Quicksand', sans-serif;
+            font-family: $fontTexto
         }
     }        
 }

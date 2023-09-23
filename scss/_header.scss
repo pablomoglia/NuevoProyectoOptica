@@ -14,16 +14,17 @@
             .btnHeader{
                 display: flex;
                 margin: 1rem;
-                border-radius:  5%;
-                border: solid 1px rgb(255, 216, 216);
+                border-radius: 15px;
+                border: solid 1px rgb(51, 133, 209);
                 color: rgb(0, 0, 0);
                 font-size: 1.1rem;
                 font-family: 'Figtree', sans-serif;
                 text-decoration: none;
                 justify-content: center;
                 &:hover {
-                    transform: scale(1.1);
-                border-radius: 10%;
+                    transform: scale(1.2);
+                    border-radius: 20px;
+                    background-color: rgb(161, 161, 255);
                 }
             }
         }
