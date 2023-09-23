@@ -4,19 +4,6 @@
     box-sizing: border-box;
 }
 
-text {
-    font-family: 'Figtree', sans-serif;
-    font-family: 'Zilla Slab', serif;
-}
-
-
-.fontTitulo {
-    font-family: 'Figtree', sans-serif;
-}
-
-.fontTexto {
-    font-family: 'Quicksand', sans-serif;
-}
 
 
 
@@ -39,42 +26,7 @@ text {
 
 
 
-.fotoLocal {
-    grid-area: fotoLocal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.imgLocal {
-    width: 50vw;
-    height: 100%;
-    border-radius: 15%;
-    padding: 3rem;
-}
-
-.textoNosotros {
-    grid-area: textoNosotros;
-    display: flex;
-    align-items: center;
-}
-
-.parrafoNosotros {
-    display: flex;
-    padding: 15px;
-    margin: 15px;
-    height: 450px;
-    overflow: auto;
-    border: solid 1px whitesmoke;
-    border-radius: 4%;
-}
-
-.titNosotros {
-    grid-area: titNosotros;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 
 
@@ -316,34 +268,7 @@ text {
 
 
 
-.contenedorIndex {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 0.3fr 1fr 1fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 5px 5px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "header header"
-        "titMarcas titDestacados"
-        "sectionMarcas sectionDestacados"
-        "sectionMarcasTex sectionDestacadosTex"
-        "footer footer";
-}
 
-.contenedorNosotros {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 4fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 5px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "header header"
-        "titNosotros titNosotros"
-        "fotoLocal textoNosotros"
-        "footer footer";
-}
 
 .contenedorLentes {
     display: grid;
@@ -431,59 +356,6 @@ text {
 
 
 
-@media screen and (max-width:768px) {
-    .contenedorNosotros {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 0.2fr 1fr 1fr 0.1fr;
-        grid-auto-columns: 1fr;
-        gap: 5px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "header"
-            "titNosotros"
-            "fotoLocal"
-            "textoNosotros"
-            "footer";
-
-        .header {
-            flex-direction: column;
-        }
-
-        .imgLocal {
-            width: 100%;
-            height: 100%;
-            border-radius: 20%;
-        }
-    }
-}
-
-@media screen and (max-width:480px) {
-    .contenedorNosotros {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-auto-columns: 1fr;
-        gap: 5px 5px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "header"
-            "titNosotros"
-            "fotoLocal"
-            "textoNosotros"
-            "footer";
-
-        .header {
-            flex-direction: column;
-        }
-
-        .footer {
-            flex-direction: column;
-        }
-
-
-
-    }
-}
 
 
 
