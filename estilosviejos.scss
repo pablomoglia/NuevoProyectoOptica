@@ -16,7 +16,26 @@
 
 
 
-
+.img2{
+    @extend .img1
+}
+    @extend .imgLentes
+    @extend .imgLentes img     
+.img3{
+    @extend .img1
+    @extend .imgLentes
+    @extend .imgLentes img     
+}
+.img4{
+    @extend .img1
+    @extend .imgLentes
+    @extend .imgLentes img     
+}
+.img5{
+    @extend .img1
+    @extend .imgLentes
+    @extend .imgLentes img     
+}
 
 
 
