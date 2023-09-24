@@ -59,6 +59,9 @@
         padding: 1rem;
         flex-direction: column;
         justify-content: space-evenly;
+        p{
+            font-family: $fontTexto;
+        }
     }
 }
 @include tablet{
