@@ -10,4 +10,65 @@
         "formContacto formContacto"
         "ubiMapa ulContacto"
         "footer footer";
+    .formContacto {
+        grid-area: formContacto;
+        margin: 30px;
+        width: 80% auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ubiMapa {
+        grid-area: ubiMapa;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        .imgUbi {
+            width: 80%;
+            border-radius: 25px;
+            border: solid 2px rgb(167, 167, 167);
+            &:hover {
+                transform: scale(1.2);
+                border: solid 3px rgb(31, 166, 228);
+            }
+        }
+    }
+    .ulContacto {
+        grid-area: ulContacto;
+        margin: 0 auto;
+        padding: 1rem;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .ulCont {
+            list-style: none;
+            text-align: center;
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }
+@include tablet{
+    .contenedorContacto {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 0.5fr 1fr 0.1fr;
+        grid-auto-columns: 1fr 1fr;
+        grid-template-areas:
+            "header"
+            "formContacto"
+            "ubiMapa"
+            "ulContacto"
+            "footer";
+        .header {
+            flex-direction: column;
+        }
+        .ulContacto{
+            width: 0 auto;
+            align-content: center;
+            align-items: center;
+        }
+    }
+}
+@include mobile
