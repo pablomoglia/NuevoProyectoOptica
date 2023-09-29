@@ -451,6 +451,10 @@
   display: flex;
   justify-content: center;
 }
+.contenedorContacto .ubiMapa a {
+  display: flex;
+  justify-content: center;
+}
 .contenedorContacto .ubiMapa .imgUbi {
   width: 80%;
   border-radius: 25px;
