@@ -131,6 +131,7 @@
 }
 .contenedorIndex .sectionMarcasTex .fontTexto {
   font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
 }
 .contenedorIndex .titDestacados {
   grid-area: titDestacados;
@@ -162,6 +163,7 @@
 }
 .contenedorIndex .sectionDestacadosTex .fontTexto {
   font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -209,6 +211,7 @@
   justify-content: center;
 }
 .contenedorNosotros .fotoLocal .imgLocal {
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
 }
@@ -276,8 +279,8 @@
   overflow: hidden;
 }
 .contenedorLentes .imgLentes img, .contenedorLentes .imgLentes .img5, .contenedorLentes .img5 img, .contenedorLentes .img5 .img5, .contenedorLentes .imgLentes .img4, .contenedorLentes .img5 .img4, .contenedorLentes .img4 img, .contenedorLentes .img4 .img5, .contenedorLentes .img4 .img4, .contenedorLentes .imgLentes .img3, .contenedorLentes .img5 .img3, .contenedorLentes .img4 .img3, .contenedorLentes .img3 img, .contenedorLentes .img3 .img5, .contenedorLentes .img3 .img4, .contenedorLentes .img3 .img3, .contenedorLentes .imgLentes .img2, .contenedorLentes .img5 .img2, .contenedorLentes .img4 .img2, .contenedorLentes .img3 .img2, .contenedorLentes .img2 img, .contenedorLentes .img2 .img5, .contenedorLentes .img2 .img4, .contenedorLentes .img2 .img3, .contenedorLentes .img2 .img2 {
-  width: 70%;
-  border-radius: 15%;
+  width: 60%;
+  border-radius: 50px;
   transition: transform 1.3s;
 }
 .contenedorLentes .imgLentes img:hover, .contenedorLentes .imgLentes .img5:hover, .contenedorLentes .img5 img:hover, .contenedorLentes .img5 .img5:hover, .contenedorLentes .imgLentes .img4:hover, .contenedorLentes .img5 .img4:hover, .contenedorLentes .img4 img:hover, .contenedorLentes .img4 .img5:hover, .contenedorLentes .img4 .img4:hover, .contenedorLentes .imgLentes .img3:hover, .contenedorLentes .img5 .img3:hover, .contenedorLentes .img4 .img3:hover, .contenedorLentes .img3 img:hover, .contenedorLentes .img3 .img5:hover, .contenedorLentes .img3 .img4:hover, .contenedorLentes .img3 .img3:hover, .contenedorLentes .imgLentes .img2:hover, .contenedorLentes .img5 .img2:hover, .contenedorLentes .img4 .img2:hover, .contenedorLentes .img3 .img2:hover, .contenedorLentes .img2 img:hover, .contenedorLentes .img2 .img5:hover, .contenedorLentes .img2 .img4:hover, .contenedorLentes .img2 .img3:hover, .contenedorLentes .img2 .img2:hover {

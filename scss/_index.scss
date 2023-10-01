@@ -54,7 +54,8 @@
             color: rgb(255, 255, 255);
         }
         .fontTexto {
-            font-family: $fontTexto
+            font-family: $fontTexto;
+            font-size: 1.2rem;
         }
     }
     .titDestacados {
@@ -85,7 +86,8 @@
             color: rgb(255, 255, 255);
         }
         .fontTexto {
-            font-family: $fontTexto
+            font-family: $fontTexto;
+            font-size: 1.1rem;
         }
     }        
 }
