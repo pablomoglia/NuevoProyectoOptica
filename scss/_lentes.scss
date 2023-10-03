@@ -1,85 +1,119 @@
 .contenedorLentes {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.2fr  1fr 0.5fr 0.1fr;
     grid-auto-columns: 1fr;
     gap: 5px;
     grid-auto-flow: row;
     grid-template-areas:
         "header header"
-        "img1 img2"
-        "img3 img4"
-        "img5 img6"
+        "lentesSol lentesSol"
+        "lentesSolImg lentesSolImg"
+        "marcos bifocales"
+        "marcosImg bifocalesImg"
+        "marcosTex bifocalesTex"
         "footer footer";
-    .img1 {
-        grid-area: img1;
+    .lentesSol{
+        grid-area: lentesSol;
+        font-family:  $fontTitulo;
+        margin: 1rem;
+    }
+    .lentesSolImg{
+        grid-area: lentesSolImg;
         display: flex;
-        justify-content: center;
-        align-content: center;
-        margin: 0 auto;
-        padding: 1rem;
-    }
-    .imgLentes {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        margin: 10px;
-        overflow: hidden;
-    }
-    .imgLentes img {
-        width: 60%;
-        border-radius: 50px;
-        transition: transform 1.3s;
-        &:hover {
-            transform: scale(1.1, 1.1);
-            border: solid 3px rgb(189, 202, 2);
-        }
-    }
-    .img2{
-        grid-area: img2;
-        @extend .img1,.imgLentes,.imgLentes,img;
-    }
-    .img3{
-        grid-area: img3;
-        @extend .img1,.imgLentes,.imgLentes,img
-    }
-    .img4{
-        grid-area: img4;
-        @extend .img1,.imgLentes,.imgLentes,img
-    }
-    .img5{
-        grid-area: img5;
-        @extend .img1,.imgLentes,.imgLentes,img
-    }
-    .img6{
-        grid-area: img6;
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-        padding: 1rem;
+        justify-content: space-around;
         flex-direction: column;
-        justify-content: space-evenly;
-        p{
-            font-family: $fontTexto;
+        .sol1{
+            display: flex;
+            justify-content: center;
+            margin: 1rem;
+            img{
+                width: 30%;
+                margin: 1rem;
+                border-radius: 50px;
+                transition: transform 1.3s;
+                &:hover {
+                    transform: scale(1.1, 1.1);
+                    border: solid 3px rgb(189, 202, 2);
+                }
+            }
         }
+        .sol2{
+            @extend .sol1, img
+        }
+    }
+    .marcos{
+        grid-area: marcos;
+        border-top: solid rgb(201, 110, 24) 2px;
+        @extend .lentesSol
+    }
+    .marcosImg{
+        grid-area: marcosImg;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 50%;
+            margin: 3rem;
+            border-radius: 50px;
+            transition: transform 1.3s;
+            &:hover {
+                transform: scale(1.1, 1.1);
+                border: solid 3px rgb(189, 202, 2);
+            }
+        }
+    }
+    .marcosTex{
+        grid-area: marcosTex;
+        margin: 2rem;
+        font-family: $fontTexto;
+        font-size: 1.1rem; 
+        border-bottom: solid rgb(201, 110, 24) 2px;
+    }
+    .bifocales{
+        grid-area: bifocales;
+        border-top: solid rgb(201, 110, 24) 2px;
+        @extend .lentesSol
+    }
+    .bifocalesImg{
+        grid-area: bifocalesImg;
+        @extend .marcosImg, img;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .bifocalesTex{
+        grid-area: bifocalesTex;
+        @extend .marcosTex;
     }
 }
 @include tablet{
     .contenedorLentes {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 1fr 1fr 1fr 1fr 1fr 1fr 0.4fr;
+        grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 0.1fr 0.8fr 0.1fr 0.1fr;
         grid-auto-columns: 1fr;
         grid-template-areas:
-            "header"
-            "img1"
-            "img2"
-            "img3"
-            "img4"
-            "img5"
-            "img6"
-            "footer";
+        "header"
+        "lentesSol"
+        "lentesSolImg"
+        "marcos" 
+        "marcosImg" 
+        "marcosTex" 
+        "bifocales"
+        "bifocalesImg"
+        "bifocalesTex"
+        "footer";
         .header {
             flex-direction: column;
+        }
+        .lentesSolImg{
+            justify-content: center;
+            .sol1{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .bifocalesImg{
+            justify-content: center;
         }
     }
 }

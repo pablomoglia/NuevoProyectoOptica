@@ -195,7 +195,7 @@
 @media screen and (max-width: 768px) {
   .contenedorIndex {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.2fr 1fr 0.6fr 0.2fr 1fr 0.6fr 0.4fr;
+    grid-template-rows: 0.1fr 0.2fr 1fr 0.6fr 0.2fr 1fr 0.6fr 0.1fr;
     grid-auto-columns: 1fr 1fr;
     grid-template-areas: "header" "titMarcas" "sectionMarcas" "sectionMarcasTex" "titDestacados" "sectionDestacados" "sectionDestacadosTex" "obrasSocyPrep" "imgOyP" "footer";
   }
@@ -287,70 +287,97 @@
 .contenedorLentes {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.1fr 1fr 1fr 1fr 0.1fr;
+  grid-template-rows: 0.1fr 0.1fr 1fr 0.2fr 1fr 0.5fr 0.1fr;
   grid-auto-columns: 1fr;
   gap: 5px;
   grid-auto-flow: row;
-  grid-template-areas: "header header" "img1 img2" "img3 img4" "img5 img6" "footer footer";
+  grid-template-areas: "header header" "lentesSol lentesSol" "lentesSolImg lentesSolImg" "marcos bifocales" "marcosImg bifocalesImg" "marcosTex bifocalesTex" "footer footer";
 }
-.contenedorLentes .img1, .contenedorLentes .img5, .contenedorLentes .img4, .contenedorLentes .img3, .contenedorLentes .img2 {
-  grid-area: img1;
+.contenedorLentes .lentesSol, .contenedorLentes .bifocales, .contenedorLentes .marcos {
+  grid-area: lentesSol;
+  font-family: "Figtree", sans-serif;
+  margin: 1rem;
+}
+.contenedorLentes .lentesSolImg {
+  grid-area: lentesSolImg;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.contenedorLentes .lentesSolImg .sol1, .contenedorLentes .lentesSolImg .sol2 {
   display: flex;
   justify-content: center;
-  align-content: center;
-  margin: 0 auto;
-  padding: 1rem;
+  margin: 1rem;
 }
-.contenedorLentes .imgLentes, .contenedorLentes .img5, .contenedorLentes .img4, .contenedorLentes .img3, .contenedorLentes .img2 {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin: 10px;
-  overflow: hidden;
-}
-.contenedorLentes .imgLentes img, .contenedorLentes .imgLentes .img5, .contenedorLentes .img5 img, .contenedorLentes .img5 .img5, .contenedorLentes .imgLentes .img4, .contenedorLentes .img5 .img4, .contenedorLentes .img4 img, .contenedorLentes .img4 .img5, .contenedorLentes .img4 .img4, .contenedorLentes .imgLentes .img3, .contenedorLentes .img5 .img3, .contenedorLentes .img4 .img3, .contenedorLentes .img3 img, .contenedorLentes .img3 .img5, .contenedorLentes .img3 .img4, .contenedorLentes .img3 .img3, .contenedorLentes .imgLentes .img2, .contenedorLentes .img5 .img2, .contenedorLentes .img4 .img2, .contenedorLentes .img3 .img2, .contenedorLentes .img2 img, .contenedorLentes .img2 .img5, .contenedorLentes .img2 .img4, .contenedorLentes .img2 .img3, .contenedorLentes .img2 .img2 {
-  width: 60%;
+.contenedorLentes .lentesSolImg .sol1 img, .contenedorLentes .lentesSolImg .sol1 .bifocalesImg, .contenedorLentes .lentesSolImg .sol1 .sol2, .contenedorLentes .lentesSolImg .sol2 img, .contenedorLentes .lentesSolImg .sol2 .bifocalesImg, .contenedorLentes .lentesSolImg .sol2 .sol2 {
+  width: 30%;
+  margin: 1rem;
   border-radius: 50px;
   transition: transform 1.3s;
 }
-.contenedorLentes .imgLentes img:hover, .contenedorLentes .imgLentes .img5:hover, .contenedorLentes .img5 img:hover, .contenedorLentes .img5 .img5:hover, .contenedorLentes .imgLentes .img4:hover, .contenedorLentes .img5 .img4:hover, .contenedorLentes .img4 img:hover, .contenedorLentes .img4 .img5:hover, .contenedorLentes .img4 .img4:hover, .contenedorLentes .imgLentes .img3:hover, .contenedorLentes .img5 .img3:hover, .contenedorLentes .img4 .img3:hover, .contenedorLentes .img3 img:hover, .contenedorLentes .img3 .img5:hover, .contenedorLentes .img3 .img4:hover, .contenedorLentes .img3 .img3:hover, .contenedorLentes .imgLentes .img2:hover, .contenedorLentes .img5 .img2:hover, .contenedorLentes .img4 .img2:hover, .contenedorLentes .img3 .img2:hover, .contenedorLentes .img2 img:hover, .contenedorLentes .img2 .img5:hover, .contenedorLentes .img2 .img4:hover, .contenedorLentes .img2 .img3:hover, .contenedorLentes .img2 .img2:hover {
+.contenedorLentes .lentesSolImg .sol1 img:hover, .contenedorLentes .lentesSolImg .sol1 .bifocalesImg:hover, .contenedorLentes .lentesSolImg .sol1 .sol2:hover, .contenedorLentes .lentesSolImg .sol2 img:hover, .contenedorLentes .lentesSolImg .sol2 .bifocalesImg:hover, .contenedorLentes .lentesSolImg .sol2 .sol2:hover {
   transform: scale(1.1, 1.1);
   border: solid 3px rgb(189, 202, 2);
 }
-.contenedorLentes .img2 {
-  grid-area: img2;
+.contenedorLentes .marcos {
+  grid-area: marcos;
+  border-top: solid rgb(201, 110, 24) 2px;
 }
-.contenedorLentes .img3 {
-  grid-area: img3;
-}
-.contenedorLentes .img4 {
-  grid-area: img4;
-}
-.contenedorLentes .img5 {
-  grid-area: img5;
-}
-.contenedorLentes .img6 {
-  grid-area: img6;
+.contenedorLentes .marcosImg, .contenedorLentes .bifocalesImg {
+  grid-area: marcosImg;
   display: flex;
-  align-items: center;
-  margin: 0 auto;
-  padding: 1rem;
   flex-direction: column;
-  justify-content: space-evenly;
+  align-items: center;
 }
-.contenedorLentes .img6 p {
+.contenedorLentes .marcosImg img, .contenedorLentes .marcosImg .bifocalesImg, .contenedorLentes .bifocalesImg img, .contenedorLentes .bifocalesImg .bifocalesImg, .contenedorLentes .marcosImg .lentesSolImg .sol2, .contenedorLentes .bifocalesImg .lentesSolImg .sol2, .contenedorLentes .lentesSolImg .marcosImg .sol2, .contenedorLentes .lentesSolImg .bifocalesImg .sol2 {
+  width: 50%;
+  margin: 3rem;
+  border-radius: 50px;
+  transition: transform 1.3s;
+}
+.contenedorLentes .marcosImg img:hover, .contenedorLentes .marcosImg .bifocalesImg:hover, .contenedorLentes .bifocalesImg img:hover, .contenedorLentes .bifocalesImg .bifocalesImg:hover, .contenedorLentes .marcosImg .lentesSolImg .sol2:hover, .contenedorLentes .bifocalesImg .lentesSolImg .sol2:hover, .contenedorLentes .lentesSolImg .marcosImg .sol2:hover, .contenedorLentes .lentesSolImg .bifocalesImg .sol2:hover {
+  transform: scale(1.1, 1.1);
+  border: solid 3px rgb(189, 202, 2);
+}
+.contenedorLentes .marcosTex, .contenedorLentes .bifocalesTex {
+  grid-area: marcosTex;
+  margin: 2rem;
   font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem;
+  border-bottom: solid rgb(201, 110, 24) 2px;
+}
+.contenedorLentes .bifocales {
+  grid-area: bifocales;
+  border-top: solid rgb(201, 110, 24) 2px;
+}
+.contenedorLentes .bifocalesImg {
+  grid-area: bifocalesImg;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contenedorLentes .bifocalesTex {
+  grid-area: bifocalesTex;
 }
 
 @media screen and (max-width: 768px) {
   .contenedorLentes {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 1fr 1fr 1fr 1fr 1fr 1fr 0.4fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 0.1fr 0.8fr 0.1fr 0.1fr;
     grid-auto-columns: 1fr;
-    grid-template-areas: "header" "img1" "img2" "img3" "img4" "img5" "img6" "footer";
+    grid-template-areas: "header" "lentesSol" "lentesSolImg" "marcos" "marcosImg" "marcosTex" "bifocales" "bifocalesImg" "bifocalesTex" "footer";
   }
   .contenedorLentes .header {
     flex-direction: column;
+  }
+  .contenedorLentes .lentesSolImg {
+    justify-content: center;
+  }
+  .contenedorLentes .lentesSolImg .sol1, .contenedorLentes .lentesSolImg .sol2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedorLentes .bifocalesImg {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 480px) {
@@ -418,7 +445,7 @@
 @media screen and (max-width: 768px) {
   .contenedorProdyacc {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.4fr 0.1fr 1fr 1fr 0.1fr 1fr 1fr 0.4fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 1fr 0.1fr 1fr 1fr 0.1fr;
     grid-auto-columns: 1fr;
     gap: 5px 5px;
     padding: 0;
@@ -441,7 +468,6 @@
   }
 }
 .formSoltur {
-  grid-area: formSoltur;
   margin: 3rem;
   display: flex;
   flex-direction: column;

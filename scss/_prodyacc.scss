@@ -63,7 +63,7 @@
     @include tablet{
         .contenedorProdyacc {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 0.4fr 0.1fr 1fr 1fr 0.1fr 1fr 1fr 0.4fr;
+            grid-template-rows: 0.1fr 0.1fr 1fr 1fr 0.1fr 1fr 1fr 0.1fr;
             grid-auto-columns: 1fr;
             gap: 5px 5px;
             padding: 0;
