@@ -10,7 +10,7 @@
         "titMarcas titMarcas"
         "sectionMarcas sectionMarcasTex"
         "titDestacados titDestacados"
-        "sectionDestacados sectionDestacadosTex"
+        "sectionDestacadosTex sectionDestacados"
         "obrasSocyPrep obrasSocyPrep"
         "imgOyP imgOyP"
         "footer footer";        
@@ -167,8 +167,9 @@
             flex-direction: column;
         }
         .imgOyP{
+            width: 50% auto;
             flex-direction: column;
-            justify-content: center;
+            align-items: center;
         }
     }
 }
