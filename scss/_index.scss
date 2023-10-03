@@ -1,7 +1,7 @@
 .contenedorIndex{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 0.2fr 1fr 0.2fr 1fr 0.1fr;
+    grid-template-rows: 0.1fr 0.2fr 0.6fr 0.2fr 0.6fr 0.2fr 1fr 0.1fr;
     grid-auto-columns: 1fr;
     gap: 5px 5px;
     grid-auto-flow: row;
@@ -11,6 +11,8 @@
         "sectionMarcas sectionMarcasTex"
         "titDestacados titDestacados"
         "sectionDestacados sectionDestacadosTex"
+        "obrasSocyPrep obrasSocyPrep"
+        "imgOyP imgOyP"
         "footer footer";        
     .titMarcas {
         grid-area: titMarcas;
@@ -89,6 +91,39 @@
             font-family: $fontTexto;
             font-size: 1.1rem;
         }
+    }
+    .obrasSocyPrep{
+        grid-area: obrasSocyPrep;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .fontTitulo{
+            font-family: $fontTitulo
+        }
+    }
+    .imgOyP{
+        grid-area: imgOyP;
+        margin: 50px;
+        display: flex;
+        justify-content: space-around;
+        .rowImg1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .imgLogoOyP{
+                margin: 1rem;
+                width: 70%;
+                border-radius: 70px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .rowImg2{
+            @extend .rowImg1, .imgLogoOyP
+        }
+        .rowImg3{
+            @extend .rowImg1, .imgLogoOyP
+        }
     }        
 }
 @include tablet {
@@ -104,10 +139,12 @@
             "titDestacados"
             "sectionDestacados"
             "sectionDestacadosTex"
+            "obrasSocyPrep"
+            "imgOyP"
             "footer";
             .header {
                 flex-direction: column;
-            }                
+            }               
     }    
 }
 @include mobile {
@@ -123,9 +160,15 @@
             "titDestacados"
             "sectionDestacados"
             "sectionDestacadosTex"
+            "obrasSocyPrep"
+            "imgOyP"
             "footer";
         .footer {
             flex-direction: column;
+        }
+        .imgOyP{
+            flex-direction: column;
+            justify-content: center;
         }
     }
 }
